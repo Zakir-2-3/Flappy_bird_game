@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Flappy_bird-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Flappy_Bird</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <p>Flappy Bird</p>
+        <ul class="ul-1">
+          <li>Control buttons</li>
+          <ul class="ul-2">
+            Start|Restart|Jump:
+            <li>W</li>
+            <li>↑</li>
+            <li>Space</li>
+            <li>LMB</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="canvas-container">
+        <canvas
+          id="canvas"
+          class="canvas"
+          width="320px"
+          height="480px"
+        ></canvas>
+        <span class="volume-container" id="volumeImgBtn">
+          <img src="./assets/images/Volume_mute.svg" id="imgVolume" />
+          <audio id="audio" src="./assets/audio/SOUND_BACKGROUND.mp3"></audio>
+        </span>
+      </div>
+    </div>
+    <script src="./app/Main.js" type="module"></script>
+  </body>
+</html>
